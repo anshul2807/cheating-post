@@ -1,0 +1,77 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 100%;
+    border: 1px solid black;
+    
+}
+.section1{
+    width: 100%;
+    height: 100px;
+    /* border: 1px solid black; */
+}
+.section1 h1{
+    padding-left: 30px;
+}
+
+.section2{
+    border-top: 1px solid black;
+    width: 100%;
+    max-height: 600px;
+    overflow-y: scroll;
+}
+.section2__post{
+    border: 1px solid black;
+    width: 400px;
+    height: 100%;
+    margin: 30px 20px;
+}
+.section2__post__1{
+    font-weight: 800;
+    font-size: 20px;
+    padding: 10px;
+}
+.section2__post__2{
+    
+    padding: 10px;
+}
+
+.section2__post__3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.increment{
+    width: 50px;
+    height: 50px;
+    font-size: 3em;
+    cursor: pointer;
+}
+
+.counter{
+    width: 50px;
+    height: 50px;
+    font-size: 3em;
+}
+
+.decrement{
+    width: 50px;
+    height: 50px;
+    font-size: 3em;
+    cursor: pointer;
+}
+.code-block{
+    background-color: rgb(192, 192, 192);
+    padding: 5px;
+}
