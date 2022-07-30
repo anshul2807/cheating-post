@@ -1,4 +1,6 @@
 const END_POINT="http://localhost:4000"
+const PRODUCTION_ENDPOINT_SERVER="https://whispering-gorge-60443.herokuapp.com";
+
 let section2=document.getElementsByClassName("section2")[0];
 
 function updateLikeRealTime(id,data){
@@ -19,13 +21,13 @@ function textProcessor(str){
 }
 function incrementLike(e){
     const post_id = e.target.id;
-    const END_POINT_LIKE=`${END_POINT}/post/like/`;
+    const END_POINT_LIKE=`${PRODUCTION_ENDPOINT_SERVER}/post/like/`;
     PostUpdateLike(post_id,true,END_POINT_LIKE);
 }
 
 function decrementLike(e){
     const post_id = e.target.id;
-    const END_POINT_LIKE=`${END_POINT}/post/like/`;
+    const END_POINT_LIKE=`${PRODUCTION_ENDPOINT_SERVER}/post/like/`;
     PostUpdateLike(post_id,false,END_POINT_LIKE);
 }
 
@@ -121,5 +123,5 @@ function PostUpdateLike(id,status,link){
 }
 
 window.onload = () => {
-    GetRequest(`${END_POINT}/post/lists/`);
+    GetRequest(`${PRODUCTION_ENDPOINT_SERVER}/post/lists/`);
 }

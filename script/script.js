@@ -1,4 +1,5 @@
 const END_POINT="http://localhost:4000"
+const PRODUCTION_ENDPOINT_SERVER="https://whispering-gorge-60443.herokuapp.com";
 const PRODUCTION_ENDPOINT="https://anshul2807.github.io/cheating-post/post.html";
 const LOCAL_ENDPOINT ="http://127.0.0.1:5500/post.html";
 function addPost(){
@@ -6,7 +7,7 @@ function addPost(){
     let body=document.getElementById("mytextarea").value;
     
 
-    PostRequest(`${END_POINT}/post/addlist/`,{
+    PostRequest(`${PRODUCTION_ENDPOINT_SERVER}/post/addlist/`,{
         title,
         body
     });
